@@ -1,0 +1,60 @@
+<?php
+
+use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
+
+class CreateGroupsAndCarsTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('cars_group', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('name');
+            $table->timestamps();
+        });
+
+        Schema::create('cars' , function(Blueprint $table)
+        {
+            $table->increments('id');
+            $table->integer('cgroup_id')->unsigned()->default(0);
+            $table->foreign('id')->references('cgroup_id')->on('cars_group')->onDelete('cascade');
+            $table->string('company');
+            $table->string('model');
+            $table->string('date_birth');
+            $table->string('price');
+            $table->string('installment_price');
+            $table->string('installment');
+            $table->string('work');
+            $table->string('gearbox');
+            $table->string('tires');
+            $table->string('body');
+            $table->string('color');
+            $table->string('remove_color');
+            $table->string('state');
+            $table->string('city');
+            $table->string('phone');
+            $table->string('vehicle');
+            $table->string('address');
+            $table->string('info');
+            $table->timestamps();
+        });
+
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::drop('cars');
+        Schema::drop('cars_group');
+    }
+}
