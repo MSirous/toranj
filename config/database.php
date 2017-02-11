@@ -56,7 +56,7 @@ return [
             'driver' => 'mysql',
             'host' => env('DB_HOST', '148.251.173.41'),
             'port' => env('DB_PORT', '3306'),
-            'database' => env('DB_DATABASE', 'toranjcms_toranjcars'),
+            'database' => env('DB_DATABASE', 'toranjcms_toranjcar'),
             'username' => env('DB_USERNAME', 'toranjcms_root'),
             'password' => env('DB_PASSWORD', 'itJi5EzO8'),
             'charset' => 'utf8',
