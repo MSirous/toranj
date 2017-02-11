@@ -8,29 +8,29 @@
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.6 -->
-  <link rel="stylesheet" href="/adminLTE/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{URL::to('/adminLTE/bootstrap/css/bootstrap.min.css')}}">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
   <!-- daterange picker -->
-  <link rel="stylesheet" href="/adminLTE/plugins/daterangepicker/daterangepicker.css">
+  <link rel="stylesheet" href="{{URL::to('/adminLTE/plugins/daterangepicker/daterangepicker.css')}}">
   <!-- bootstrap datepicker -->
-  <link rel="stylesheet" href="/adminLTE/plugins/datepicker/datepicker3.css">
+  <link rel="stylesheet" href="{{URL::to('/adminLTE/plugins/datepicker/datepicker3.css')}}">
   <!-- iCheck for checkboxes and radio inputs -->
-  <link rel="stylesheet" href="/adminLTE/plugins/iCheck/all.css">
+  <link rel="stylesheet" href="{{URL::to('/adminLTE/plugins/iCheck/all.css')}}">
   <!-- Bootstrap Color Picker -->
-  <link rel="stylesheet" href="/adminLTE/plugins/colorpicker/bootstrap-colorpicker.min.css">
+  <link rel="stylesheet" href="{{URL::to('/adminLTE/plugins/colorpicker/bootstrap-colorpicker.min.css')}}">
   <!-- Bootstrap time Picker -->
-  <link rel="stylesheet" href="/adminLTE/plugins/timepicker/bootstrap-timepicker.min.css">
+  <link rel="stylesheet" href="{{URL::to('/adminLTE/plugins/timepicker/bootstrap-timepicker.min.css')}}">
   <!-- Select2 -->
-  <link rel="stylesheet" href="/adminLTE/plugins/select2/select2.min.css">
+  <link rel="stylesheet" href="{{URL::to('/adminLTE/plugins/select2/select2.min.css')}}">
   <!-- Theme style -->
-  <link rel="stylesheet" href="/adminLTE/dist/css/AdminLTE.min.css">
-  <link rel="stylesheet" href="/adminLTE/jquery-ui/jquery-ui.min.css">
+  <link rel="stylesheet" href="{{URL::to('/adminLTE/dist/css/AdminLTE.min.css')}}">
+  <link rel="stylesheet" href="{{URL::to('/adminLTE/jquery-ui/jquery-ui.min.css')}}">
   <!-- AdminLTE Skins. Choose a skin from the css/skins
   folder instead of downloading all of them to reduce the load. -->
-  <link rel="stylesheet" href="/adminLTE/dist/css/skins/_all-skins.min.css">
+  <link rel="stylesheet" href="{{URL::to('/adminLTE/dist/css/skins/_all-skins.min.css')}}">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -201,35 +201,35 @@
 @yield('body')
 
 <!-- jQuery 2.2.3 -->
-<script src="/adminLTE/plugins/jQuery/jquery-2.2.3.min.js"></script>
+<script src="{{URL::to('/adminLTE/plugins/jQuery/jquery-2.2.3.min.js')}}"></script>
 <!-- Bootstrap 3.3.6 -->
-<script src="/adminLTE/bootstrap/js/bootstrap.min.js"></script>
+<script src="{{URL::to('/adminLTE/bootstrap/js/bootstrap.min.js')}}"></script>
 <!-- Select2 -->
-<script src="/adminLTE/plugins/select2/select2.full.min.js"></script>
+<script src="{{URL::to('/adminLTE/plugins/select2/select2.full.min.js')}}"></script>
 <!-- InputMask -->
-<script src="/adminLTE/plugins/input-mask/jquery.inputmask.js"></script>
-<script src="/adminLTE/plugins/input-mask/jquery.inputmask.date.extensions.js"></script>
-<script src="/adminLTE/plugins/input-mask/jquery.inputmask.extensions.js"></script>
+<script src="{{URL::to('/adminLTE/plugins/input-mask/jquery.inputmask.js')}}"></script>
+<script src="{{URL::to('/adminLTE/plugins/input-mask/jquery.inputmask.date.extensions.js')}}"></script>
+<script src="{{URL::to('/adminLTE/plugins/input-mask/jquery.inputmask.extensions.js')}}"></script>
 <!-- date-range-picker -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
-<script src="/adminLTE/plugins/daterangepicker/daterangepicker.js"></script>
+<script src="{{URL::to('/adminLTE/plugins/daterangepicker/daterangepicker.js')}}"></script>
 <!-- bootstrap datepicker -->
-<script src="/adminLTE/plugins/datepicker/bootstrap-datepicker.js"></script>
+<script src="{{URL::to('/adminLTE/plugins/datepicker/bootstrap-datepicker.js')}}"></script>
 <!-- bootstrap color picker -->
-<script src="/adminLTE/plugins/colorpicker/bootstrap-colorpicker.min.js"></script>
+<script src="{{URL::to('/adminLTE/plugins/colorpicker/bootstrap-colorpicker.min.js')}}"></script>
 <!-- bootstrap time picker -->
-<script src="/adminLTE/plugins/timepicker/bootstrap-timepicker.min.js"></script>
+<script src="{{URL::to('/adminLTE/plugins/timepicker/bootstrap-timepicker.min.js')}}"></script>
 <!-- SlimScroll 1.3.0 -->
-<script src="/adminLTE/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<script src="{{URL::to('/adminLTE/plugins/slimScroll/jquery.slimscroll.min.js')}}"></script>
 <!-- iCheck 1.0.1 -->
-<script src="/adminLTE/plugins/iCheck/icheck.min.js"></script>
+<script src="{{URL::to('/adminLTE/plugins/iCheck/icheck.min.js')}}"></script>
 <!-- FastClick -->
-<script src="/adminLTE/plugins/fastclick/fastclick.js"></script>
+<script src="{{URL::to('/adminLTE/plugins/fastclick/fastclick.js')}}"></script>
 <!-- AdminLTE App -->
-<script src="/adminLTE/dist/js/app.min.js"></script>
+<script src="{{URL::to('/adminLTE/dist/js/app.min.js')}}"></script>
 <!-- AdminLTE for demo purposes -->
-<script src="/adminLTE/dist/js/demo.js"></script>
-<script src="/adminLTE/jquery-ui/jquery-ui.min.js"></script>
+<script src="{{URL::to('/adminLTE/dist/js/demo.js')}}"></script>
+<script src="{{URL::to('/adminLTE/jquery-ui/jquery-ui.min.js')}}"></script>
 <!-- Page script -->
 <script>
   $(function () {
