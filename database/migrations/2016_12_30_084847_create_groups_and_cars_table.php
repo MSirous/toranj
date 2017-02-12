@@ -23,7 +23,7 @@ class CreateGroupsAndCarsTable extends Migration
         {
             $table->increments('id');
             $table->integer('cgroup_id')->unsigned()->default(0);
-            $table->foreign('id')->references('cgroup_id')->on('cars_group')->onDelete('cascade');
+            //$table->foreign('id')->references('cgroup_id')->on('cars_group')->onDelete('cascade');
             $table->string('company');
             $table->string('model');
             $table->string('date_birth');
