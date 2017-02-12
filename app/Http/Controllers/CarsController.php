@@ -25,7 +25,7 @@ class CarsController extends Controller
     'state'             => ['required'],
     'phone'             => ['required'],
     'info'              => ['required'],
-    'photo'           => ['mimes: jpg, jpeg, png, gif, bmp']
+   
     ]; 
 
     private $upload_dir =  'public/uploads' ;

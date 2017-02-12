@@ -15,7 +15,7 @@ class CarsInfoTable extends Migration
     {
         //
            Schema::create('cars_info', function (Blueprint $table) {
-            $table->increments('id')->unsigned()->default(0);
+            $table->increments('id');
             $table->string('state');
             $table->string('city');
             $table->string('work');
