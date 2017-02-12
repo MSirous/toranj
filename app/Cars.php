@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Cars extends Model
 {
+    protected $primaryKey = 'id';
 
 	protected $fillable = [
 	'cgroup_id','company','model','date_birth','price','installment_price','installment','work','gearbox','tires','color',
