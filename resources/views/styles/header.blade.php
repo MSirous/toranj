@@ -42,6 +42,8 @@
 <body class="hold-transition skin-blue sidebar-mini">
   <div class="wrapper">
 
+@yield('head')
+
     <header class="main-header">
       <!-- Logo -->
       <a href="{{ url('/home')}}" class="logo">
