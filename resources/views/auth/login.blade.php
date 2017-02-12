@@ -1,3 +1,4 @@
+@extends('styles.header')
 
 <div class="container">
     <div class="row">
