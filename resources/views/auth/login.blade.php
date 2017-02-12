@@ -1,5 +1,5 @@
 @extends('styles.header')
-@section('content')
+@section('head')
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
