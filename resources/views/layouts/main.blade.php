@@ -1,8 +1,9 @@
-@extends('styles.header')
-@section('body')
+@include('layouts.partials.navbar')
 
-@section('sidebar')
-@endsection
+<!-- Left side column. contains the logo and sidebar -->
+<aside class="main-sidebar">
+  @include('layouts.partials.sidebar')
+</aside>
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
       <!-- Content Header (Page header) -->
@@ -12,7 +13,7 @@
           <small>13 خودرو جدید </small>
         </h1>
         <ol class="breadcrumb">
-          <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+          <li><a href="{{URL('home')}}"><i class="fa fa-dashboard"></i> Home</a></li>
           <li class="active">خودرو</li>
         </ol>
       </section>
@@ -288,13 +289,8 @@
   immediately after the control sidebar -->
   <div class="control-sidebar-bg"></div>
 </div>
-@section('footer')
 
 <!-- ./wrapper -->
-@endsection
-
-@endsection
-
 
 @yield('form-script')
 </body>

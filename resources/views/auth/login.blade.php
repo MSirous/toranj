@@ -1,4 +1,4 @@
-@extends('styles.header')
+@include('layouts.partials.navbar')
 
 <div class="container">
     <div class="row">
@@ -46,7 +46,6 @@
                                 </div>
                             </div>
                         </div>
-@section('head')
                         <div class="form-group">
                             <div class="col-md-8 col-md-offset-4">
                                 <button type="submit" class="btn btn-primary">
@@ -63,5 +62,7 @@
             </div>
         </div>
     </div>
+@section('head')
+
 </div>
 @endsection
