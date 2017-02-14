@@ -1,6 +1,9 @@
+@include('layouts.partials.navbar')
 
-@extends('layouts.main')
-@section('car')
+<!-- Left side column. contains the logo and sidebar -->
+<aside class="main-sidebar">
+  @include('layouts.partials.sidebar')
+</aside>
 
 <div class="box box-primary">
   <div class="box-header with-border">
