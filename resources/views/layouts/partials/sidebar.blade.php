@@ -45,6 +45,7 @@
             </a>
             <ul class="treeview-menu">
               <li class="active"><a href=""><i class="fa fa-circle-o"></i> افزوردن مقدارهای خام</a></li>
+              <li><a href=""><i class="fa fa-circle-o"></i> ثبت مقادیر خام</a></li>
               <li><a href=""><i class="fa fa-circle-o"></i> ثبت آگهی فروش خودرو</a></li>
               <li><a href=""><i class="fa fa-circle-o"></i> ثبت آگهی انواع تریلر</a></li>
               <li><a href=""><i class="fa fa-circle-o"></i> فرم فروش اتاق کامیون</a></li>
