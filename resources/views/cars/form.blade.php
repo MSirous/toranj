@@ -24,7 +24,7 @@
         <div class="input-group">
           <div class="input-group-btn">
           <a href="" class="btn btn-info" id="add-new-btn">
-           city
+           افزودن گروه ماشین ها
           </a>
           </div>
           <!-- /btn-group -->
