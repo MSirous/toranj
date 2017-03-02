@@ -163,7 +163,6 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
-        'PragmaRX\Tracker\Vendor\Laravel\ServiceProvider',
 
 
 
@@ -181,6 +180,7 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        'PragmaRX\Tracker\Vendor\Laravel\ServiceProvider',
 
     ],
 
