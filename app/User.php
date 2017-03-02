@@ -26,4 +26,30 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+
+    public function role()
+    {
+        // return $this->belongsTo('App\Role');
+        return $this->belongsTo('App\Role');
+
+    }
+
+    public function locate()
+    {
+        // return $this->belongsTo('App\Role');
+        return $this->belongsTo('App\Locate');
+
+    }
+
+
+    public function adminUsers()
+    {
+        return $this->hasMany(Cars::class);
+    }
+
+
+
+
+
 }

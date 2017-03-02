@@ -64,22 +64,27 @@ class CarsController extends Controller
     // Index method and Show All data
     public function index(Request $request)
     {
+
+        //dd($request->user()->id);
     
         $cars = Cars::where(function($query) use ($request){
-                    if ($cgroup_id = ($request->get('cgroup_id')))
-                    {
-                        $query->where('cgroup_id', $cgroup_id);
-                    }
-                    if (($term = $request->get ('term'))) {
-                        $keywords = '%' . $term . '%';
-                        $query->orWhere('model', 'LIKE' , '%'. $term. '%' );
-                        $query->orWhere('company', 'LIKE' , '%'. $term. '%' );
-                        $query->orWhere('date_birth', 'LIKE' , '%'. $term. '%' );
-                        $query->orWhere('color', 'LIKE' , '%'. $term. '%' );
-                    }
-                 })
-                        ->orderBy('id' , 'dec')
-                        ->paginate($this->limit); 
+            // filter by current user::::
+
+
+                if ($cgroup_id = ($request->get('cgroup_id')))
+                {
+                    $query->where('cgroup_id', $cgroup_id);
+                }
+                if (($term = $request->get ('term'))) {
+                    $keywords = '%' . $term . '%';
+                    $query->orWhere('model', 'LIKE' , '%'. $term. '%' );
+                    $query->orWhere('company', 'LIKE' , '%'. $term. '%' );
+                    $query->orWhere('date_birth', 'LIKE' , '%'. $term. '%' );
+                    $query->orWhere('color', 'LIKE' , '%'. $term. '%' );
+                }
+             })
+                ->orderBy('id' , 'dec')
+                ->paginate($this->limit); 
 
 
 

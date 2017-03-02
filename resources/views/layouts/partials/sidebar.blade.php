@@ -1,6 +1,5 @@
 @if( ! Auth::guest())
 
-
       <!-- sidebar: style can be found in sidebar.less -->
       <section class="sidebar">
         <!-- Sidebar user panel -->
@@ -28,9 +27,16 @@
         <ul class="sidebar-menu">
           <li class="header">MAIN NAVIGATION</li>
 
-           <li {{ Request::segment(1) == "home" ? "active" : "" }} >
-            <a href="{{ url('/home')}}">
+           <li {{ Request::segment(1) == "admin" ? "active" : "" }} >
+            <a href="{{ url('/admin')}}">
               <i class="fa fa-home"></i> <span>خانه</span>
+              <span class="pull-right-container"> 
+              </span>
+            </a>  
+          </li>
+           <li {{ Request::segment(1) == "dddd" ? "active" : "" }} >
+            <a href="{{ url('/admin/users')}}">
+              <i class="fa fa-users"></i> <span>مدیریت کاربران</span>
               <span class="pull-right-container"> 
               </span>
             </a>  
@@ -45,7 +51,7 @@
             </a>
             <ul class="treeview-menu">
               <li class="active"><a href=""><i class="fa fa-circle-o"></i> افزوردن مقدارهای خام</a></li>
-              <li><a href="{{ url('/home')}}"><i class="fa fa-circle-o"></i> ثبت مقادیر خام</a></li>
+              <li><a href="{{ url('/admin')}}"><i class="fa fa-circle-o"></i> ثبت مقادیر خام</a></li>
               <li><a href=""><i class="fa fa-circle-o"></i> ثبت آگهی فروش خودرو</a></li>
               <li><a href=""><i class="fa fa-circle-o"></i> ثبت آگهی انواع تریلر</a></li>
               <li><a href=""><i class="fa fa-circle-o"></i> فرم فروش اتاق کامیون</a></li>

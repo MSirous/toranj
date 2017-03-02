@@ -23,3 +23,11 @@ Route::get('cars/autocomplete' , ['uses' =>'CarsController@autocomplete', 'as' =
 Route::resource('cars' , 'CarsController');
 
 Route::get('/home', 'HomeController@index');
+
+// Admin Users
+Route::get('/admin', function()
+{
+	return view('admin.index');
+});
+Route::resource('admin/users' , 'AdminUsersController');
+

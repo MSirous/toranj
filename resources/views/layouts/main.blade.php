@@ -13,7 +13,7 @@
           <small>13 خودرو جدید </small>
         </h1>
         <ol class="breadcrumb">
-          <li><a href="{{URL('home')}}"><i class="fa fa-dashboard"></i> Home</a></li>
+          <li><a href="{{URL('admin')}}"><i class="fa fa-dashboard"></i> admin</a></li>
           <li class="active">خودرو</li>
         </ol>
       </section>

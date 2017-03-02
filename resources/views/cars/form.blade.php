@@ -5,18 +5,8 @@
 </div>
 </div>
 <!-- /.box-header -->
-<div class="box-body">
-  @if (count($errors))
-  <div class="alert alert-danger alert-dismissible">
-    <ul>
-      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-      <h4><i class="icon fa fa-ban"></i> warning!</h4>
-      @foreach($errors->all() as $error)
-      <li>{{$error }}</li>
-      @endforeach
-    </ul>
-  </div>
-  @endif
+@include('includes.form-errors')
+
   <div class="row">
     <div class="col-md-6">
       <!-- /.form-group -->
@@ -155,7 +145,7 @@
         <!-- /.form-group -->
         <div class="form-group">
           <div class="form-group">
-            {!! Form::select('city' , App\Cars::pluck('city','id') , null, ['class' => 'form-control']) !!}
+            {{-- {!! Form::select('city' , App\Cars::pluck('city','id') , null, ['class' => 'form-control']) !!} --}}
           </div>
           <!-- /.form-group -->
         </div>
