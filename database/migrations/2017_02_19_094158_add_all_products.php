@@ -34,7 +34,7 @@ class AddAllProducts extends Migration
         });
     }
 
-    /*ß
+    /*
      * Reverse the migrations.
      *
      * @return void

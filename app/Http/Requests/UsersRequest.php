@@ -21,7 +21,7 @@ class UsersRequest extends FormRequest
      *
      * @return array
      */
-    public function rules()
+    public function roles()
     {
         return [
             //
@@ -31,7 +31,7 @@ class UsersRequest extends FormRequest
         'address' =>'required',
         'role_id' =>'required',
         'is_active' =>'required',
-        'password' =>'required'و
+        'password' =>'required',
 
         ];
     }
