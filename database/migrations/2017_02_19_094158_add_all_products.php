@@ -14,19 +14,19 @@ class AddAllProducts extends Migration
     public function up()
     {
         //
-        Schema::create('colors', function (Blueprint $table) {
+        Schema::create('color', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
             $table->timestamps();
         });
 
-        Schema::create('gearbox', function (Blueprint $table) {
+        Schema::create('gearboxs', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
             $table->timestamps();
         });
 
-        Schema::create('state_city', function (Blueprint $table) {
+        Schema::create('city', function (Blueprint $table) {
         $table->increments('id');
         $table->string('name');
         $table->string('state_id');
@@ -34,7 +34,7 @@ class AddAllProducts extends Migration
         });
     }
 
-    /**
+    /*ß
      * Reverse the migrations.
      *
      * @return void
@@ -42,9 +42,9 @@ class AddAllProducts extends Migration
     public function down()
     {
         //
-        Schema::drop('colors');
-        Schema::drop('gearbox');
-        Schema::drop('state_city');
+        Schema::dropIfExists('color');
+        Schema::dropIfExists('gearboxs');
+        Schema::dropIfExists('city');
 
     }
 }
