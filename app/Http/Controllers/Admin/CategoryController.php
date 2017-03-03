@@ -1,16 +1,19 @@
 <?php
 
 namespace App\Http\Controllers\Admin;
-use App\Models\Category;
+
+use App\Category;
+use App\Http\Controllers\Controller;
 use Request;
 
-class CategoryController extends AdminController {
+class CategoryController extends Controller
+{
 
     public function index()
     {
-        $items = App\Models\Category::root()->getDescendants();
+        $items = Category::root()->getDescendants();
 
-        return view('admin.categories.index',compact('items'));
+        return view('admin.categories.index', compact('items'));
     }
 
     public function store()
@@ -28,20 +31,18 @@ class CategoryController extends AdminController {
             $parent = Category::create(['title' => 'root']);
         }
 
-
-
         $parent->children()->create(Request::all());
         return redirect()->to('admin/category');
-	}
+    }
 
     public function create()
     {
         $parent_id = Request::get('parent');
 
-        return view('admin.categories.create',['parent_id',$parent_id]);
-	}
-	
-	public function edit($id)
+        return view('admin.categories.create', ['parent_id', $parent_id]);
+    }
+
+    public function edit($id)
     {
         $node = Category::where('id', $id)->first();
         $node->title = Request::get('title');
@@ -53,13 +54,14 @@ class CategoryController extends AdminController {
         return redirect()->to('admin');
     }
 
-	public function getDelete($id) {
-		$node = Category::where('id', $id)->first();
-		if ($node->delete()) {
-			\Session::flash('flashMessageText', 'با موفقیت حذف شد.');
-			\Session::flash('flashMessageClass', 'success');
-		}
-		return \Redirect::back();
-	}
+    public function getDelete($id)
+    {
+        $node = Category::where('id', $id)->first();
+        if ($node->delete()) {
+            \Session::flash('flashMessageText', 'با موفقیت حذف شد.');
+            \Session::flash('flashMessageClass', 'success');
+        }
+        return \Redirect::back();
+    }
 
 }
