@@ -66,6 +66,13 @@
               </span>
             </a>  
           </li>
+          <li class="">
+            <a href="{{ url('/admin/category')}}">
+              <i class="fa fa-car"></i> <span>کتگوری</span>
+              <span class="pull-right-container"> 
+              </span>
+            </a>  
+          </li>
           {{-- <li class="treeview">
             <a href="#">
               <i class="fa fa-files-o"></i>
