@@ -33,7 +33,8 @@ Route::resource('admin/users' , 'AdminUsersController');
 
 // category routes by Iman
 Route::get('admin/category/all','Admin\CategoryController@index')->name('catIndex');
-Route::get('admin/category/add','Admin\CategoryController@add')->name('catAdd');
-Route::post('admin/category/delete/{id}','Admin\CategoryController@delete')->name('catDelete');
-Route::post('admin/category/edit/{id}','Admin\CategoryController@edit')->name('catEdit');
+Route::get('admin/category/add','Admin\CategoryController@create')->name('catCreate');
+Route::post('admin/category/add','Admin\CategoryController@store')->name('catStore');
+Route::get('admin/category/delete/{id}','Admin\CategoryController@delete')->name('catDelete');
+Route::get('admin/category/edit/{id}','Admin\CategoryController@edit')->name('catEdit');
 // End

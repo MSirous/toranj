@@ -14,10 +14,6 @@
     <br>
     <div class="col-md-12">
         <div class="tree">
-
-            <?php $items = App\Models\Category::root()->getDescendants(); ?>
-
-
             <ul>
                 @foreach ($items as $item)
 
