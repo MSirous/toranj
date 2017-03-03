@@ -181,6 +181,7 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         'PragmaRX\Tracker\Vendor\Laravel\ServiceProvider',
+        Baum\Providers\BaumServiceProvider::class,
 
     ],
 
