@@ -11,6 +11,7 @@
         {!! Form::close() !!}
         <!-- /.box-body -->
         </div>
+        </div>
 
 
     </section>

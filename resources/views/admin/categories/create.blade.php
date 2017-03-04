@@ -1,6 +1,7 @@
 <h1>ساخت یک مجموعه</h1>
 
-{!! Form::open(['method' => 'POST' , 'files' =>true]) !!}  <div class="form-group">
+<div class="form-group">
+{!! Form::open(['method' => 'POST' , 'url' => route('catStore',['parent_id' => Request::get('parent_id',1)]), 'files' =>true]) !!}
     {!! Form::label('title' , 'عنوان') !!}
     {!! Form::text('title' ,null, ['class' =>'form-control']) !!}
 

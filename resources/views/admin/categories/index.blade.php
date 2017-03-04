@@ -21,7 +21,7 @@
 
     <div class="row">
         <div class="col-md-12">
-            <a class="btn btn-success btn-embossed" href="{{ url('admin/category/add?parent=1') }}">
+            <a class="btn btn-success btn-embossed" href="{{ url('admin/category/add?parent_id=1') }}">
                 <i class="fa fa-plus"></i>
                 افزودن
             </a>
@@ -35,7 +35,7 @@
                 @foreach ($items as $item)
 
                     <?php
-                    $href = url('admin/category/add?parent=' . $item->id);
+                    $href = url('admin/category/add?parent_id=' . $item->id);
                     $deleteHref = url('admin/category/delete/' . $item->id);
                     $editHref = url('admin/category/edit/' . $item->id);
                     ?>
