@@ -32,7 +32,7 @@ class CategoryController extends Controller
         }
 
         $parent->children()->create(Request::all());
-        return redirect()->to('admin/category');
+        return redirect()->route('catIndex');
     }
 
     public function create()
@@ -51,17 +51,19 @@ class CategoryController extends Controller
         \Session::flash('flashMessageText', 'با موفقیت ثبت شد.');
         \Session::flash('flashMessageClass', 'success');
 
-        return redirect()->to('admin');
+        return redirect()->route('catIndex');
     }
 
     public function getDelete($id)
     {
         $node = Category::where('id', $id)->first();
+        
         if ($node->delete()) {
             \Session::flash('flashMessageText', 'با موفقیت حذف شد.');
             \Session::flash('flashMessageClass', 'success');
         }
-        return \Redirect::back();
+
+        return redirect()->back();
     }
 
 }
