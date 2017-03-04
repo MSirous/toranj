@@ -68,7 +68,7 @@
           </li>
           <li class="">
             <a href="{{ url('/admin/category/all')}}">
-              <i class="fa fa-car"></i> <span>کتگوری</span>
+              <i class="fa fa-car"></i> <span>دسته بندی ها</span>
               <span class="pull-right-container"> 
               </span>
             </a>  

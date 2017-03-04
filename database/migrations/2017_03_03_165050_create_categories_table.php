@@ -19,7 +19,6 @@ class CreateCategoriesTable extends Migration {
       // We add indexes on parent_id, lft, rgt columns by default.
       $table->increments('id');
       $table->string('title', 32);
-
       $table->integer('parent_id')->nullable()->index();
       $table->integer('lft')->nullable()->index();
       $table->integer('rgt')->nullable()->index();
