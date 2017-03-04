@@ -67,7 +67,7 @@
             </a>  
           </li>
           <li class="">
-            <a href="{{ url('/admin/category')}}">
+            <a href="{{ url('/admin/category/all')}}">
               <i class="fa fa-car"></i> <span>کتگوری</span>
               <span class="pull-right-container"> 
               </span>
