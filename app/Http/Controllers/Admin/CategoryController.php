@@ -57,7 +57,7 @@ class CategoryController extends Controller
     public function getDelete($id)
     {
         $node = Category::where('id', $id)->first();
-        
+
         if ($node->delete()) {
             \Session::flash('flashMessageText', 'با موفقیت حذف شد.');
             \Session::flash('flashMessageClass', 'success');
