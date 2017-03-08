@@ -37,4 +37,5 @@ Route::get('admin/category/add','Admin\CategoryController@create')->name('catCre
 Route::post('admin/category/add','Admin\CategoryController@store')->name('catStore');
 Route::get('admin/category/delete/{id}','Admin\CategoryController@delete')->name('catDelete');
 Route::get('admin/category/edit/{id}','Admin\CategoryController@edit')->name('catEdit');
+Route::post('admin/category/edit/{id}','Admin\CategoryController@update')->name('catUpdate');
 // End

@@ -44,6 +44,13 @@ class CategoryController extends Controller
 
     public function edit($id)
     {
+
+        $node = Category::where('id', $id)->first();
+        return view('admin.categories.edit', ['node' => $node]);
+    }
+
+    public function update($id)
+    {
         $node = Category::where('id', $id)->first();
         $node->title = Request::get('title');
         $node->save();
