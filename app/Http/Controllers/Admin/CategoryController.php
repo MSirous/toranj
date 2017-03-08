@@ -54,7 +54,7 @@ class CategoryController extends Controller
         return redirect()->route('catIndex');
     }
 
-    public function getDelete($id)
+    public function delete($id)
     {
         $node = Category::where('id', $id)->first();
 
