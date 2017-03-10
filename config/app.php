@@ -180,8 +180,9 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-        'PragmaRX\Tracker\Vendor\Laravel\ServiceProvider',
         Baum\Providers\BaumServiceProvider::class,
+        'PragmaRX\Tracker\Vendor\Laravel\ServiceProvider'
+
 
     ],
 

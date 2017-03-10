@@ -31,7 +31,7 @@ Route::get('/admin', function()
 });
 Route::resource('admin/users' , 'AdminUsersController');
 
-// category routes by Iman
+// category routes
 Route::get('admin/category','Admin\CategoryController@index')->name('catIndex');
 Route::get('admin/category/add','Admin\CategoryController@create')->name('catCreate');
 Route::post('admin/category/add','Admin\CategoryController@store')->name('catStore');
